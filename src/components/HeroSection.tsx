@@ -43,9 +43,11 @@ const HeroSection = () => {
             isLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           style={{ backgroundImage: `url(${imageSrc})` }}
+          role="img"
+          aria-label="Pizza artesanal assada em forno a lenha com ingredientes frescos"
         >
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/50 dark:bg-black/70"></div>
         </div>
       </div>
 
@@ -74,10 +76,10 @@ const HeroSection = () => {
           as="h1"
           delay={400}
           animationType="fadeInUp"
-          className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight"
+          className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight text-white dark:text-gray-100"
         >
           A Pizza Artesanal mais Saborosa de{" "}
-          <span className="text-pizza-red">Matozinhos</span>
+          <span className="text-pizza-red dark:text-red-400">Matozinhos</span>
         </AnimatedText>
         
         {/* Description */}
@@ -85,7 +87,7 @@ const HeroSection = () => {
           as="p"
           delay={600}
           animationType="fadeInUp"
-          className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed font-light"
+          className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed font-light text-gray-100 dark:text-gray-200"
         >
           Massa de fermentação natural, ingredientes frescos e entrega rápida. 
           Peça a sua!
@@ -100,6 +102,7 @@ const HeroSection = () => {
             size="lg"
             className="btn-pizza text-lg px-8 py-4 h-auto transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             onClick={scrollToCardapio}
+            aria-label="Ver cardápio completo e fazer pedido"
           >
             VER CARDÁPIO E FAZER PEDIDO
           </Button>
@@ -112,8 +115,12 @@ const HeroSection = () => {
         animationType="fadeIn"
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
       >
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center hover:border-pizza-red transition-colors duration-300">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+        <div 
+          className="w-6 h-10 border-2 border-white dark:border-gray-300 rounded-full flex justify-center hover:border-pizza-red dark:hover:border-red-400 transition-colors duration-300"
+          role="button"
+          aria-label="Rolar para baixo para ver mais conteúdo"
+        >
+          <div className="w-1 h-3 bg-white dark:bg-gray-300 rounded-full mt-2 animate-pulse"></div>
         </div>
       </AnimatedText>
     </section>
