@@ -31,9 +31,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
       if (savedTheme) {
         return savedTheme;
       }
-      // Verificar preferência do sistema
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
+    // Padrão é sempre modo claro
     return 'light';
   });
 
