@@ -1,4 +1,6 @@
 import { MapPin, Clock, Phone } from "lucide-react";
+import { ContactForm } from "./ContactForm";
+import { MapComponent } from "./MapComponent";
 
 const ContactSection = () => {
   return (
@@ -6,25 +8,36 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            Venha nos <span className="text-pizza-red">Visitar</span> ou Peça em Casa
+            Entre em <span className="text-pizza-red">Contato</span> Conosco
           </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Tem alguma dúvida, sugestão ou quer fazer um pedido? Estamos aqui para ajudar!
+          </p>
+        </div>
+
+        {/* Formulário de Contato */}
+        <div className="mb-16" data-aos="fade-up" data-aos-delay="200">
+          <ContactForm />
+        </div>
+
+        {/* Seção de Localização e Informações */}
+        <div className="text-center mb-12">
+          <h3 className="text-2xl font-bold text-foreground mb-4">
+            Venha nos <span className="text-pizza-red">Visitar</span>
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Map */}
           <div className="order-2 lg:order-1" data-aos="fade-right" data-aos-delay="200">
-            <div className="relative overflow-hidden rounded-2xl shadow-soft h-80">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.234567890123!2d-44.1234567!3d-19.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMatozinhos%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização da Pizza da Praça em Matozinhos"
-              ></iframe>
-            </div>
+            <MapComponent
+              latitude={-19.5833}
+              longitude={-44.0833}
+              zoom={15}
+              height="320px"
+              markerTitle="Pizza da Praça"
+              popupContent="Pizza da Praça - Matozinhos, MG"
+            />
           </div>
 
           {/* Contact Info */}
