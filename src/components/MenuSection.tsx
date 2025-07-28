@@ -27,15 +27,15 @@ const MenuSection = () => {
   };
 
   return (
-    <section id="cardapio" className="py-16 md:py-24 bg-background">
+    <section id="cardapio" className="py-16 md:py-24 bg-background" data-aos="fade-up">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
             Nossos Sabores <span className="text-pizza-red">Mais Pedidos</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="200">
           {featuredPizzas.map((pizza, index) => (
             <div key={index} className="card-pizza group">
               {/* Pizza Image */}
@@ -61,7 +61,7 @@ const MenuSection = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="text-center">
+        <div className="text-center" data-aos="fade-up" data-aos-delay="300">
           <Button 
             size="lg"
             className="btn-pizza-outline hover:btn-pizza text-lg px-8 py-4 h-auto"

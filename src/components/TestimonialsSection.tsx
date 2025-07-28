@@ -20,15 +20,15 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="section-beige py-16 md:py-24">
+    <section className="section-beige py-16 md:py-24" data-aos="fade-up">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
             Quem prova, <span className="text-pizza-red">aprova!</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="card-pizza text-center">
               {/* Stars */}

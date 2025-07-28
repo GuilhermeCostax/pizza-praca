@@ -11,11 +11,11 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="sobre" className="section-beige py-16 md:py-24">
+    <section id="sobre" className="section-beige py-16 md:py-24" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Image */}
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1" data-aos="fade-right" data-aos-delay="200">
             <div className="relative overflow-hidden rounded-2xl shadow-soft">
               <img 
                 src={woodOven} 
@@ -27,7 +27,7 @@ const AboutSection = () => {
           </div>
 
           {/* Content */}
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-2" data-aos="fade-left" data-aos-delay="100">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
               Uma Tradição de <span className="text-pizza-red">Família</span>
             </h2>
