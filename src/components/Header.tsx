@@ -19,9 +19,12 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-display font-bold text-pizza-red">
+            <button 
+              onClick={() => scrollToSection('inicio')}
+              className="text-2xl font-display font-bold text-pizza-red hover:opacity-80 transition-opacity duration-200 cursor-pointer"
+            >
               Pizza da Praça
-            </h1>
+            </button>
           </div>
 
           {/* Desktop Navigation */}

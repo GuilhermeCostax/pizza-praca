@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
+# 🍕 Pizza da Praça
 
-## Project info
+Site institucional moderno e responsivo para a pizzaria "Pizza da Praça" localizada em Matozinhos. Uma aplicação React desenvolvida com as melhores práticas de desenvolvimento frontend.
 
-**URL**: https://lovable.dev/projects/ef13c344-6e6b-4bbf-8282-1d9d9ff6ff76
+## 👨‍💻 Desenvolvedor
 
-## How can I edit this code?
+**Guilherme Costa** - Desenvolvedor Full Stack
 
-There are several ways of editing your application.
+Projeto desenvolvido com foco em performance, responsividade e experiência do usuário.
 
-**Use Lovable**
+## 🚀 Sobre o Projeto
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ef13c344-6e6b-4bbf-8282-1d9d9ff6ff76) and start prompting.
+O Pizza da Praça é um site institucional que apresenta uma pizzaria artesanal, destacando seus sabores especiais, história e facilitando o contato direto com os clientes através do WhatsApp. O projeto foi desenvolvido com foco em:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Performance** - Carregamento rápido e otimizado
+- **Responsividade** - Experiência perfeita em todos os dispositivos
+- **Acessibilidade** - Interface inclusiva para todos os usuários
+- **UX/UI Moderna** - Design atrativo e intuitivo
 
-**Use your preferred IDE**
+## 🛠️ Tecnologias Utilizadas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Frontend
+- **React 18.3.1** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Superset do JavaScript com tipagem estática
+- **Vite** - Build tool moderna e rápida
+- **React Router DOM** - Roteamento para SPAs
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Estilização
+- **Tailwind CSS** - Framework CSS utilitário
+- **shadcn/ui** - Sistema de componentes baseado em Radix UI
+- **Lucide React** - Biblioteca de ícones
+- **CSS Variables** - Sistema de cores customizado
 
-Follow these steps:
+### Bibliotecas Principais
+- **TanStack React Query** - Gerenciamento de estado servidor
+- **React Hook Form** - Gerenciamento de formulários
+- **Zod** - Validação de schemas
+- **Radix UI** - Componentes acessíveis
+- **Sonner** - Sistema de notificações
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Estrutura do Projeto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── ui/             # Componentes base do shadcn/ui
+│   ├── Header.tsx      # Cabeçalho com navegação
+│   ├── HeroSection.tsx # Seção principal
+│   ├── MenuSection.tsx # Cardápio de pizzas
+│   └── ...
+├── pages/              # Páginas da aplicação
+├── hooks/              # Custom hooks
+├── lib/                # Utilitários e configurações
+├── assets/             # Imagens e recursos estáticos
+└── index.css          # Estilos globais e variáveis CSS
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Como Executar o Projeto
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Pré-requisitos
 
-**Use GitHub Codespaces**
+- Node.js (versão 18 ou superior)
+- npm, yarn ou pnpm
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Instalação
 
-## What technologies are used for this project?
+1. **Clone o repositório:**
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd pizza-praca
+```
 
-This project is built with:
+2. **Instale as dependências:**
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Execute o projeto em modo de desenvolvimento:**
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+```
 
-## How can I deploy this project?
+4. **Acesse a aplicação:**
+   - Abra seu navegador em `http://localhost:8080`
 
-Simply open [Lovable](https://lovable.dev/projects/ef13c344-6e6b-4bbf-8282-1d9d9ff6ff76) and click on Share -> Publish.
+### Scripts Disponíveis
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+npm run dev          # Inicia o servidor de desenvolvimento
+npm run build        # Gera build de produção
+npm run preview      # Visualiza o build de produção
+npm run lint         # Executa o linter
+```

@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone, Instagram, Facebook } from "lucide-react";
+  import { MapPin, Clock, Phone, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -115,8 +115,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Pizza da Praça. Todos os direitos reservados. | 
-            Site desenvolvido por <span className="text-pizza-red">Lovable</span>
+            © 2025 Pizza da Praça - Todos os direitos reservados
           </p>
         </div>
       </div>
