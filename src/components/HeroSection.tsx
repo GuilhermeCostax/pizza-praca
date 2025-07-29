@@ -59,7 +59,7 @@ const HeroSection = () => {
           animationType="fadeInDown"
           className="mb-8"
         >
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8">
              {qualityIndicators.map((indicator, index) => (
                <QualityIndicator
                  key={indicator.text}
@@ -76,7 +76,7 @@ const HeroSection = () => {
           as="h1"
           delay={400}
           animationType="fadeInUp"
-          className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight text-white dark:text-gray-100"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight text-white dark:text-gray-100"
         >
           A Pizza Artesanal mais Saborosa de{" "}
           <span className="text-pizza-red dark:text-red-400">Matozinhos</span>
@@ -87,7 +87,7 @@ const HeroSection = () => {
           as="p"
           delay={600}
           animationType="fadeInUp"
-          className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed font-light text-gray-100 dark:text-gray-200"
+          className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed font-light text-gray-100 dark:text-gray-200"
         >
           Massa de fermentação natural, ingredientes frescos e entrega rápida. 
           Peça a sua!
@@ -100,7 +100,7 @@ const HeroSection = () => {
         >
           <Button 
             size="lg"
-            className="btn-pizza text-lg px-8 py-4 h-auto transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="btn-pizza text-sm sm:text-lg px-6 sm:px-8 py-3 sm:py-4 h-auto transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             onClick={scrollToCardapio}
             aria-label="Ver cardápio completo e fazer pedido"
           >

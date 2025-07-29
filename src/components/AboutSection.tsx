@@ -13,7 +13,7 @@ const AboutSection = () => {
   return (
     <section id="sobre" className="section-beige dark:bg-gray-900 py-16 md:py-24" data-aos="fade-up">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
           {/* Image */}
           <div className="order-2 lg:order-1" data-aos="fade-right" data-aos-delay="200">
             <div className="relative overflow-hidden rounded-2xl shadow-soft">

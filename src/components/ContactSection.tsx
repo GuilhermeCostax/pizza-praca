@@ -27,7 +27,7 @@ const ContactSection = () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Map */}
           <div className="order-2 lg:order-1" data-aos="fade-right" data-aos-delay="200">
             <div role="region" aria-label="Mapa de localização da Pizza da Praça">

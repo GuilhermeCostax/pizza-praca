@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '@/hooks/useTheme';
+import { useTheme } from "@/contexts/ThemeContext";
 import { Button } from '@/components/ui/button';
 import { Moon, Sun } from 'lucide-react';
 

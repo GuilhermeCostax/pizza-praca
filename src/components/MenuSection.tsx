@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Button } from "@/components/ui/button";
 import PizzaCardSkeleton from "@/components/ui/PizzaCardSkeleton";
 import pizzaCalabresa from "@/assets/pizza-calabresa.jpg";
@@ -19,7 +19,7 @@ const MenuSection = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [pizzas, setPizzas] = useState<Pizza[]>([]);
 
-  const allPizzas: Pizza[] = [
+  const allPizzas: Pizza[] = useMemo(() => [
     {
       name: "Calabresa Artesanal",
       description: "Calabresa artesanal fatiada, cebola roxa e azeitonas pretas sobre nosso molho especial.",
@@ -50,7 +50,7 @@ const MenuSection = () => {
       image: pizzaFrango, // Usando a mesma imagem como placeholder
       category: 'doces'
     }
-  ];
+  ], []);
 
   // Simular carregamento de dados
   useEffect(() => {
@@ -63,7 +63,7 @@ const MenuSection = () => {
     };
 
     loadPizzas();
-  }, []);
+  }, [allPizzas]);
 
   // Filtrar pizzas baseado no filtro ativo
   const filteredPizzas = activeFilter === 'todas' 
@@ -109,7 +109,7 @@ const MenuSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="200">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="200">
           {isLoading ? (
             // Skeleton Loading
             Array.from({ length: 6 }).map((_, index) => (

@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-pizza-dark dark:bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-display font-bold text-pizza-red dark:text-red-400 mb-4">
